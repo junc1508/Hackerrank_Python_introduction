@@ -32,7 +32,7 @@ if __name__ == '__main__':
             print(l)
         
         
-or
+#or
 n = input()
 l = []
 for _ in range(n):
@@ -40,7 +40,7 @@ for _ in range(n):
     cmd = s[0]
     args = s[1:]
     if cmd !="print":
-        cmd += "("+ ",".join(args) +")"   #cmd(args[1],(args[2]))
-        eval("l."+cmd)
+        cmd += "("+ ",".join(args) +")"   #cmd = cmd(args[1],(args[2]))
+        eval("l."+cmd)                    #l.cmd (cmd is made into python function by eval)
     else:
         print l
