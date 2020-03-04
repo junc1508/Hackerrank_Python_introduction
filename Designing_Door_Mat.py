@@ -14,7 +14,7 @@
 
 
 
-list = input().split()
+n,m = map(int,input().split())
 n = int(list[0])
 m = int(list[1])
 for i in range(int((n-1)/2)):
